@@ -1,0 +1,18 @@
+# docker-compose.yml
+
+services:
+  db:
+    image: postgres:15-alpine # แนะนำให้ระบุเวอร์ชันและใช้ alpine เพื่อให้ image เบาลง
+    container_name: kanban_postgres
+    restart: always
+    shm_size: 128mb
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: job_board # กำหนดชื่อ Database เริ่มต้นให้เลย
+    ports:
+      - "5432:5432" # แมปพอร์ตให้ Prisma จากเครื่อง Host ทะลุเข้ามาหา Postgres ได้
+    volumes:
+      - pgdata:/var/lib/postgresql/data # ผูก Volume เพื่อให้ข้อมูลไม่หายเวลาลบ Container
+volumes:
+  pgdata: # ประกาศตัวแปร Volume
