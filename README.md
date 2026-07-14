@@ -326,7 +326,7 @@ model JobApplication {
    - Icon ใช้จาก `lucide-react`
 
 ---
-
+- ใช้ Excel ดีกว่า
 ---
 
 <p align="center">
