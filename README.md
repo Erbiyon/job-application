@@ -330,5 +330,5 @@ model JobApplication {
 ---
 
 <p align="center">
-  สร้างด้วย ❤️ โดยใช้ <a href="https://nextjs.org">Next.js</a> + <a href="https://www.prisma.io">Prisma</a> + <a href="https://ui.shadcn.com">shadcn/ui</a>
+  สร้างด้วย ❤️ โดยใช้ DekCom
 </p>
