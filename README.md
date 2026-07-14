@@ -99,17 +99,17 @@
 │   │  RSC + Data  │  │   • createApplication         │    │
 │   │  Fetching    │  │   • getApplications           │    │
 │   └──────────────┘  │   • updateApplicationStatus   │    │
-│                     │   • updateApplicationDetails   │    │
-│                     │   • deleteApplication          │    │
+│                     │   • updateApplicationDetails  │    │
+│                     │   • deleteApplication         │    │
 │                     └───────────────┬───────────────┘    │
 │                                     │                    │
 └─────────────────────────────────────┼────────────────────┘
                                       │ Prisma ORM
                                       ▼
                           ┌───────────────────────┐
-                          │   PostgreSQL 15        │
-                          │   (Docker Container)   │
-                          │   DB: job_board         │
+                          │   PostgreSQL 15       │
+                          │   (Docker Container)  │
+                          │   DB: job_board       │
                           └───────────────────────┘
 ```
 
@@ -326,44 +326,6 @@ model JobApplication {
    - Icon ใช้จาก `lucide-react`
 
 ---
-
-## 🤝 การมีส่วนร่วม
-
-ยินดีรับ contributions จากทุกคน! กรุณาทำตามขั้นตอนดังนี้:
-
-1. **Fork** repository นี้
-2. **สร้าง Branch** สำหรับ feature ใหม่
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. **Commit** การเปลี่ยนแปลง
-   ```bash
-   git commit -m "feat: add amazing feature"
-   ```
-4. **Push** ขึ้น Branch
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-5. เปิด **Pull Request**
-
-### แนวทาง Commit Message
-
-ใช้รูปแบบ [Conventional Commits](https://www.conventionalcommits.org/):
-
-| Prefix | ใช้เมื่อ |
-|---|---|
-| `feat:` | เพิ่มฟีเจอร์ใหม่ |
-| `fix:` | แก้ไขบัค |
-| `docs:` | แก้ไขเอกสาร |
-| `style:` | แก้ไข CSS / formatting |
-| `refactor:` | ปรับปรุงโค้ดโดยไม่เปลี่ยนพฤติกรรม |
-| `chore:` | งานอื่นๆ (dependencies, config) |
-
----
-
-## 📄 License
-
-โปรเจกต์นี้เป็น private project ภายใต้สิทธิ์ของเจ้าของ repository
 
 ---
 
